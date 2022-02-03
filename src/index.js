@@ -1,13 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Provider } from "react-redux";
-import { Memo } from "./useMemo";
-import { Ref } from "./useRef";
+import { Memo } from "./memo-index";
+import { Ref } from "./ref-index";
+import { Reducer } from "./reducer-index";
+
 ReactDOM.render(
   <>
     <Memo />
-    <b></b>
+    <hr></hr>
     <Ref />
+    <hr></hr>
+    <Reducer />
   </>,
   document.getElementById("root")
 );
